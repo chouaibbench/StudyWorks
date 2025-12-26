@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <div style={{ maxWidth: 900, margin: "0 auto", padding: 16 }}>
-      <h1>React Product Manager</h1>
+      <h1 style={{ textAlign: "center", marginBottom: 24 }}>React Product Manager</h1>
       <SearchFilter />
       <ProductForm />
       <ProductList />
