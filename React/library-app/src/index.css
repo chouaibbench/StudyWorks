@@ -1,0 +1,150 @@
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* --- Container --- */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Titles --- */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+
+/* --- Book List --- */
+.book-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.book-item {
+  background: #ffffff;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.book-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Book Info --- */
+.book-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1a202c;
+}
+
+.book-sub {
+  font-size: 14px;
+  color: #718096;
+}
+
+/* --- Buttons --- */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+}
+
+.btn.edit {
+  background: #3182ce;
+  color: white;
+}
+
+.btn.edit:hover {
+  background: #2b6cb0;
+}
+
+.btn.delete {
+  background: #e53e3e;
+  color: white;
+}
+
+.btn.delete:hover {
+  background: #c53030;
+}
+
+/* --- Form --- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+button[type="submit"] {
+  background: #38a169;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #2f855a;
+}
+
+/* --- Empty State --- */
+.empty-state {
+  text-align: center;
+  color: #718096;
+  margin-top: 20px;
+  font-style: italic;
+}

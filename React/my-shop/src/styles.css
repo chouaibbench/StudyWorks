@@ -1,0 +1,8 @@
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #222;
+}
+a { color: inherit; }
+button { border: 1px solid #ccc; background: white; padding: 6px 10px; border-radius: 6px; }

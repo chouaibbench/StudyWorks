@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #ffffff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Links */
+.navbar a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2d3748;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  background: #edf2f7;
+  color: #2b6cb0;
+}
+
+/* Active link */
+.navbar a.active {
+  background: #3182ce;
+  color: #fff;
+}
