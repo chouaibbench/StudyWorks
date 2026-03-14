@@ -1,0 +1,73 @@
+# ex 1
+
+
+stages:
+  - build
+  - test
+
+build_job:
+  stage: build
+  script:
+    - echo "Building application"
+
+test_job:
+  stage: test
+  script:
+    - echo "Running tests"
+
+# ex 2
+
+stages:
+  - install
+  - test
+
+install_dependencies:
+  stage: install
+  script:
+    - npm install
+
+run_tests:
+  stage: test
+  script:
+    - npm test
+
+# ex 3
+
+stages:
+  - install
+  - test
+cache:
+  paths:
+    - node_modules/
+
+install_dependencies:
+  stage: install
+  script:
+    - npm install
+
+run_tests:
+  stage: test
+  script:
+    - npm test
+
+# ex 4
+
+stages:
+  - build
+  - test
+
+build_job:
+  stage: build
+  script:
+    - echo "Building application"
+
+test_job:
+  stage: test
+  script:
+    - echo "Running tests"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+
+# ex 5
+
+stages
