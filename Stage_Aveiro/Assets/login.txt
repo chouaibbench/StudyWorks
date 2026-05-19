@@ -1,0 +1,4 @@
+Role	        Email	                        Password
+
+Worker	        worker@fixflow.com	        password123
+Technician	tech@fixflow.com	        password123

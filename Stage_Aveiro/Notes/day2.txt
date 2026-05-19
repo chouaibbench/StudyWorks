@@ -1,0 +1,24 @@
+Day 2 of My Internship
+
+Today, I started working on defining my main project idea: FixFlow.
+
+In many factory environments, when a machine breaks down, workers often have to manually report the issue, which can be slow, unstructured, and inefficient.
+
+FixFlow aims to solve this problem by introducing a simple digital maintenance system.
+
+The idea is:
+
+* Each machine has a QR code
+* Workers scan it to report an issue بسرعة
+* A ticket is created instantly
+* Technicians receive it and manage the issue in real time
+
+Today, I focused on:
+
+* Understanding the problem in real-world scenarios
+* Defining the system workflow
+* Identifying the core features
+
+This helped me build a clear vision before starting development.
+
+Next step: design the database and start building the backend.

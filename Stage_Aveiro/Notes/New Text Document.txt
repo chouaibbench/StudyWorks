@@ -1,0 +1,20 @@
+Perfect! Since you want a **post summarizing your progress over the last days**, we can make a **Day 6–progress update** that builds on your Day 2 post and shows how much your project has evolved. Here's a polished draft based on your style:
+
+---
+
+Day 6 of My Internship
+
+Over the past few days, I’ve been making solid progress on **FixFlow**.
+
+When I started, the idea was simple: help factories handle machine breakdowns more efficiently. Since then, I’ve moved from defining the concept to **actual development**.
+
+Here’s what I’ve done so far:
+
+* Designed the **database** structure to support machines, tickets, and users
+* Started **backend development** using Laravel
+* Implemented the core features: scanning QR codes, reporting issues, and ticket management
+* Tested the workflow to ensure technicians can manage issues in real time
+
+It’s amazing to see the project take shape and to apply what I’ve learned in a real-world environment.
+
+Next step: continue building the backend and integrate it with the frontend for a smooth experience.
