@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -59,7 +60,8 @@ class CourseController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $course = Course::findOrFail($id);
+        $this->authorize('update', $course);
     }
 
     /**
@@ -67,6 +69,25 @@ class CourseController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $course = Course::findOrFail($id);
+        $this->authorize('delete', $course);
+    }
+
+    /**
+     * Display soft-deleted courses.
+     */
+    public function trashed()
+    {
+        $courses = Course::onlyTrashed()->get();
+        return view('courses.trashed', compact('courses'));
+    }
+
+    /**
+     * Restore a soft-deleted course.
+     */
+    public function restore(string $id)
+    {
+        Course::withTrashed()->findOrFail($id)->restore();
+        return redirect()->route('courses.trashed')->with('success', 'Course restored.');
     }
 }
